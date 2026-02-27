@@ -7,9 +7,9 @@ import "./shows.css";
 export default function ShowDetails({ show }) {
   const [selectedEpisode, setSelectedEpisode] = useState();
 
-  // if (!show) {
-  //   return <p>Please select a show to learn more.</p>;
-  // }
+  if (!show) {
+    return <p>Please select a show to learn more.</p>;
+  }
 
   return (
     <div className="show-details">
